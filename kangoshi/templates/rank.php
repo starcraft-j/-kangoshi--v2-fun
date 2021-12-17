@@ -1,6 +1,5 @@
 
 <div class="ranking">
-  <?php include 'function.php'; ?>
 
   <?php wp_reset_postdata(); 
     $args = array(

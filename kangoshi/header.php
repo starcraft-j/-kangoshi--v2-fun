@@ -26,6 +26,8 @@
   </head>
   <body>
     <?php include 'tags/bodyTag.php'; ?>
+    <?php include "templates/function.php"; ?>
+
     <div id="container">
       <header id="header">
         <nav>

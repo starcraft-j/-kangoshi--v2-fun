@@ -1,3 +1,15 @@
+<h2 class="hikaku__title--02">
+  <div class="title__wrap">
+    <span class="f-24 title__text">大手30社から厳選した</span><span class="f-24">看護師求人・転職サイト比較表</span>
+  </div>
+  <?php if(is_mobile()) : ?>
+    <span class="date__box"><?php echo date('Y'); ?>年<br><?php echo date('n'); ?>月<?php echo date('j'); ?>日最新</span>
+  <?php else : ?>
+  <span class="date__box"><?php echo date('Y'); ?>年<?php echo date('n'); ?>月<?php echo date('j'); ?>日最新</span>
+  <?php endif; ?>
+
+</h2>
+
 <?php if(!is_search()) : ?>
 <?php $args = array(
           'posts_per_page' => -1,
