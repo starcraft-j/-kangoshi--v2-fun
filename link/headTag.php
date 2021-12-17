@@ -19,40 +19,16 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N1EEL0TY3C"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-N1EEL0TY3C');
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26496721-4"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'UA-26496721-4');
-</script>
-
-
-
-<!-- Global site tag (gtag.js) - Google Ads: 876559501 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-876559501"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 335908459 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-335908459"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-876559501');
+  gtag('config', 'AW-335908459');
 </script>
-<!-- Event snippet for 公式サイトへの誘導ＣＶ conversion page -->
+<!-- Event snippet for 看護師中間CV conversion page -->
 <script>
-  gtag('event', 'conversion', {'send_to': 'AW-876559501/nVnRCOyfh2kQjfn8oQM'});
+  gtag('event', 'conversion', {'send_to': 'AW-335908459/idleCK_PyYcDEOuclqAB'});
 </script>
