@@ -1,14 +1,26 @@
+<?php $rankID = ""; ?>
 
 <div class="ranking">
 
   <?php wp_reset_postdata(); 
-    $args = array(
-      'posts_per_page' => -1,
-      'post_type' => 'kangoshi',
-      'meta_key' => 'rank',
-      'orderby' => 'meta_value_num',
-      'order' => 'asc',
-    );
+    if(is_page("todo2")) {
+      $args = array(
+        'posts_per_page' => -1,
+        'post_type' => 'kangoshi',
+        'meta_key' => 'rank-todo2',
+        'orderby' => 'meta_value_num',
+        'order' => 'asc',
+      );
+    } else {
+      $args = array(
+        'posts_per_page' => -1,
+        'post_type' => 'kangoshi',
+        'meta_key' => 'rank',
+        'orderby' => 'meta_value_num',
+        'order' => 'asc',
+      );
+    }
+
   ?>
 
   <?php $the_query = new WP_Query( $args );
@@ -36,7 +48,22 @@
     $comment = get_field('rank-comment');
   ?>
 
-  <div class="ranking__content">
+  <?php 
+      if($post->ID == 378) {
+        $rankID = "roo";
+      } elseif($post->ID == 368) {
+        $rankID = "worker";
+      } elseif($post->ID == 369) {
+        $rankID = "oshigoto";
+      } elseif($post->ID == 142) {
+        $rankID = "hatarako";
+      } elseif($post->ID == 200) {
+        $rankID = "bank";
+      }
+
+  ?>
+
+  <div class="ranking__content" id="<?php echo $rankID; ?>">
 
     <h3 class="content__title">
       <img src="<?php bloginfo('template_url'); ?>/images/icons/crown__0<?php echo $i; ?>--m.svg" alt=""/>
@@ -144,6 +171,13 @@
 
       <?php endif; ?>
 
+        <div class="btn__top--text center">
+          <?php if(is_mobile()) : ?>
+          <p class="f-14 tomato bold" style="margin-bottom: -20px">無料登録完了まで60秒！</p>
+          <?php else : ?>
+          <p class="tomato bold" style="margin-bottom: -30px">無料登録完了まで60秒！</p>
+          <?php endif; ?>
+        </div>
         <div class="btnBox--big">
             <a class="prrrr btn" href="<?php echo home_url('/'); ?><?php echo $url; ?>" target="_blank"><span>公式サイトはこちら</span><i class="fas fa-arrow-right"></i>
             </a>

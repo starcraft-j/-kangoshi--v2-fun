@@ -10,8 +10,11 @@
   --d-grey: #777272;
   --white: #fff;
   --border: #ddc7c7;
+  --nbtn: #f9802b;
 }
-
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,

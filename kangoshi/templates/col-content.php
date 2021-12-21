@@ -1,6 +1,6 @@
 
-<div class="column map" id="map">
-  <h4 class="column__title map__title">転職お役立ち情報</h4>
+<div class="column" id="column">
+  <h4 class="column__title">転職お役立ち情報</h4>
   <div class="column__cate">
     <div class="cate">
       <div class="cate__catelink">
