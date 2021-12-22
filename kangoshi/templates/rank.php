@@ -5,7 +5,7 @@
   <?php wp_reset_postdata(); 
     if(is_page("todo2")) {
       $args = array(
-        'posts_per_page' => -1,
+        'posts_per_page' => 4,
         'post_type' => 'kangoshi',
         'meta_key' => 'rank-todo2',
         'orderby' => 'meta_value_num',
@@ -82,7 +82,9 @@
           </a>
         </div>
         <div class="left__hyouka">
-          <span class="hyouka__star"><?php star($i); ?></span><span class="hyouka__number"><?php echo $number; ?></span>
+          <span class="hyouka__star">
+            <?php star($i); ?></span>
+          <span class="hyouka__number"><?php echo num($i); ?></span>
         </div>
       </div>
 

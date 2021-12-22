@@ -99,8 +99,8 @@ $arealinks = [
             <a class="prrrr" href="<?php echo home_url('/todo2/')?>?todo=広島"><?php echo $k; ?></a>
             <?php elseif($k == "鳥取") : ?>
             <a class="prrrr" href="<?php echo home_url('/todo2/')?>?todo=鳥取"><?php echo $k; ?></a>
-            <?php elseif($k == "鳥根") : ?>
-            <a class="prrrr" href="<?php echo home_url('/todo2/')?>?todo=鳥根"><?php echo $k; ?></a>
+            <?php elseif($k == "島根") : ?>
+            <a class="prrrr" href="<?php echo home_url('/todo2/')?>?todo=島根"><?php echo $k; ?></a>
             <?php elseif($k == "山口") : ?>
             <a class="prrrr" href="<?php echo home_url('/todo2/')?>?todo=山口"><?php echo $k; ?></a>
             <?php elseif($k == "香川") : ?>

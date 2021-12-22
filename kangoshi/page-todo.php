@@ -27,6 +27,9 @@
           <?php endif; ?>
         </div>
       </h2>
+      <div class="todo__descript">
+        <p>「<span class="bold">あそこのサイトに登録しておけば、休日が多く、給料の高い求人があったのに・・・</span>」なんてことにならないように、最低でも<span class="pink bold">2～3サイト登録</span>するのが転職で失敗しない大事なポイントですよ！</p>
+      </div>
 
     </section>
 
@@ -57,7 +60,7 @@
         <?php endif; ?>
       </div>
 
-      <?php include "templates/hikaku-todo.php"; ?>
+      <?php include "templates/hikaku.php"; ?>
     
     </section>
 

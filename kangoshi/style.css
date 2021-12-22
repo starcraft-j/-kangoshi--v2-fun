@@ -2369,6 +2369,7 @@ section#section__foot .foot_column {
   margin-bottom: 4px;
 }
 
+/* 211222都道府県追加 */
 
 #section__pagetitle {
   margin-top: 30px;
@@ -2380,6 +2381,18 @@ section#section__foot .foot_column {
   width: 100px;
 }
 
+#section__pagetitle .todo__descript {
+  background-color: var(--l-main2);
+  border: 2px solid var(--main2);
+  margin: 20px auto 0;
+  width: 870px;
+  max-width: 94%;
+}
+
+#section__pagetitle .todo__descript p {
+  padding: 14px 20px;
+}
+
 @media (max-width: 768px) { 
   #section__pagetitle {
     padding: 10px 0;
@@ -2388,6 +2401,11 @@ section#section__foot .foot_column {
   }
   #section__pagetitle img {
     width: 60px;
+  }
+  #section__pagetitle .todo__descript p {
+    padding: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
   }
 }
 

@@ -49,7 +49,9 @@
     </section>
 
     <section id="section__foot">
-      
+      <div class="foot__map">
+        <?php include "templates/map-content.php"; ?>
+      </div>
       <div class="foot__column">
         <?php include "templates/col-content.php"; ?>
       </div>
