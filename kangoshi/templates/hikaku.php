@@ -25,6 +25,8 @@
           'meta_key' => 'rank-todo2',
           'orderby' => 'meta_value_num',
           'order' => 'asc',
+          'post_status' => 'publish',
+
       );
 ?>
 <?php elseif(is_search()) : ?>
@@ -34,6 +36,7 @@
           'meta_key' => $sort_key,
           'orderby' => 'meta_value_num',
           'order' => $sort_order,
+          'post_status' => 'publish',
           's' => $s,
           'meta_query' => array($metaquerysp),
       );
@@ -44,6 +47,7 @@
           'posts_per_page' => -1,
           'post_type' => 'kangoshi',
           'meta_key' => 'rank',
+          'post_status' => 'publish',
           'orderby' => 'meta_value_num',
           'order' => 'asc',
       );
@@ -139,7 +143,14 @@
           <p><?php echo $jobNum; ?></p>
         </td>
         <td>
-          <p><?php foreach($genre as $value) {echo $value.', '; } ?></p>
+          <p><?php foreach($genre as $value) { 
+                if($value == end($genre)) {
+                  echo $value; 
+                } else {
+                  echo $value.', ';
+                }
+              }
+              ?></p>
         </td>
         <td>
           <p class="maru"><?php maru($i); ?></p>

@@ -13,11 +13,11 @@
   if($val == 1) {
     echo "5.0";
   } elseif($val == 2) {
-    echo "4.9";
+    echo "4.8";
   } elseif($val == 3) {
-    echo "4.7";
-  } elseif($val == 4) {
     echo "4.5";
+  } elseif($val == 4) {
+    echo "4.3";
   } elseif($val == 5) {
     echo "4.0";
   }

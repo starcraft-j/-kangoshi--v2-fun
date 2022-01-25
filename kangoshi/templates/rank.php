@@ -9,6 +9,7 @@
         'post_type' => 'kangoshi',
         'meta_key' => 'rank-todo2',
         'orderby' => 'meta_value_num',
+        'post_status' => 'publish',
         'order' => 'asc',
       );
     } else {
@@ -17,6 +18,7 @@
         'post_type' => 'kangoshi',
         'meta_key' => 'rank',
         'orderby' => 'meta_value_num',
+        'post_status' => 'publish',
         'order' => 'asc',
       );
     }
@@ -175,9 +177,17 @@
 
         <div class="btn__top--text center">
           <?php if(is_mobile()) : ?>
-          <p class="f-14 tomato bold" style="margin-bottom: -20px">無料登録完了まで60秒！</p>
+            <?php if($post->ID == 368 ) : ?>
+              <p class="f-14 tomato bold" style="margin-bottom: -20px">▼4月入職可能！<br>約30秒で登録完了！利用は完全無料▼</p>
+            <?php else : ?>
+              <p class="f-14 tomato bold" style="margin-bottom: -20px">無料登録完了まで60秒！</p>
+            <?php endif; ?>
           <?php else : ?>
-          <p class="tomato bold" style="margin-bottom: -30px">無料登録完了まで60秒！</p>
+            <?php if($post->ID == 368 ) : ?>
+              <p class="tomato bold" style="margin-bottom: -30px">▼4月入職可能！約30秒で登録完了！利用は完全無料▼</p>
+            <?php else : ?>
+              <p class="tomato bold" style="margin-bottom: -30px">無料登録完了まで60秒！</p>
+            <?php endif; ?>
           <?php endif; ?>
         </div>
         <div class="btnBox--big">

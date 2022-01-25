@@ -22,7 +22,7 @@
       <h2 class="rank__title">
         <div class="title__wrap">
           <span class="title__text">大手30社から厳選した看護師求人転職</span>
-          <span class="title__text">おすすめランキングBEST5</span>
+          <span class="title__text">おすすめランキングBEST4</span>
         </div>
       </h2>      
 

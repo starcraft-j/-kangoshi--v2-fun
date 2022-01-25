@@ -17,6 +17,8 @@
           'meta_key' => 'rank',
           'orderby' => 'meta_value_num',
           'order' => 'asc',
+          'post_status' => 'publish',
+
       );
 ?>
 
@@ -30,6 +32,8 @@
         'order' => $sort_order,
         's' => $s,
         'meta_query' => array($metaquerysp),
+        'post_status' => 'publish',
+
     ); 
   ?>
 

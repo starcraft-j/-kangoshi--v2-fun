@@ -6,6 +6,7 @@
         'orderby' => 'meta_value_num',
         'order' => $sort_order,
         's' => $s,
+        'post_status' => 'publish',
         'meta_query' => array($metaquerysp),
     );
 
