@@ -43,11 +43,11 @@
         <?php if(is_front_page() || is_page('todo') || is_page('todo2')) : ?>
           <?php if(!is_mobile()) : ?>
             <picture>
-              <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/images/top/fv--pc.webp"><img src="<?php bloginfo('template_url'); ?>/top/fv--pc.png" alt="看護師転職サイトランキング">
+              <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/images/top/fv__pc-new.webp"><img src="<?php bloginfo('template_url'); ?>/top/fv__pc-new.png" alt="看護師転職サイトランキング">
             </picture>
           <?php else : ?>
             <picture>
-              <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/images/top/fv--sp.webp"><img src="<?php bloginfo('template_url'); ?>/top/fv--sp.png" alt="看護師転職サイトランキング">
+              <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/images/top/fv__sp-new.webp"><img src="<?php bloginfo('template_url'); ?>/top/fv__sp-new.png" alt="看護師転職サイトランキング">
             </picture>
           <?php endif; ?>
         <?php endif; ?>
